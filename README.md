@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BookMyShow Clone
 
 A full-stack BookMyShow clone built with **React + Vite** (frontend) and **Python FastAPI + SQLite** (backend).
@@ -75,3 +76,6 @@ project/
         ├── api/         # Axios API layer
         └── context/     # Auth context
 ```
+=======
+# bookmyshow_new
+>>>>>>> 2f020ebe75500300eb92adc24677a9118a18f120
