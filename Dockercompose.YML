@@ -1,0 +1,27 @@
+Version:"3.9"
+
+services:
+ backend:
+  build:
+   context: ./backend
+  containern_name: bookmyshow-backend
+  ports:
+   - "8080:8080"
+  Volumes:
+   - sqlite_data:/app
+  restart: unless-stopped
+
+ frontend:
+  build:
+   context: ./frontend
+  containern_name: bookmyshow-frontend
+  ports:
+   - "3000:3000"
+  depends_on:
+   - backend
+  restart: unless-stopped
+
+volumes:
+ sqlite_data:   
+
+  
