@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 export default function BookingConfirmation() {
     const location = useLocation()
     const navigate = useNavigate()
+    //const booking = location.state?.booking
     const booking = location.state?.booking
 
     useEffect(() => {
